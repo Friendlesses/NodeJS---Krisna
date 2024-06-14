@@ -9,14 +9,14 @@ app.use((req, res, next) => {
 });
 
 app.get('/hello', (req, res) => {
-    res.json({
+    res.send({
         message: "Success fetch message",
         data: "Hello World!"
     });
 });
 
 app.get('/user', (req, res) => {
-    res.json({
+    res.send({
         message: "Success fetch user",
         data: {
             id: 1,

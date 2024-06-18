@@ -1,0 +1,15 @@
+{
+  "name": "tugas-6-krisna",
+  "version": "1.0.0",
+  "main": "tugas6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,3 +1,3 @@
-export const CLOUDINARY_CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME || "dzd4prczl";
-export const CLOUDINARY_API_KEY = process.env.CLOUDINARY_API_KEY || "774444985178793";
-export const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET || "LIV24QUhqWN_NHJ4WWIBXvsAd9M";
+export const CLOUDINARY_CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME || "";
+export const CLOUDINARY_API_KEY = process.env.CLOUDINARY_API_KEY || "";
+export const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET || "";

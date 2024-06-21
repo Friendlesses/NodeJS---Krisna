@@ -19,7 +19,7 @@ export default {
   },
   async findAll(req: Request, res: Response) {
     try {
-      const result = await ProductsModel.find();
+      const result = await ProductsModel.find().populate('category');
       res.status(200).json({
         data: result,
         message: "Success get all products",
@@ -36,7 +36,7 @@ export default {
     try {
       const result = await ProductsModel.findOne({
         _id: req.params.id,
-      });
+      }).populate('category');
       res.status(200).json({
         data: result,
         message: "Success get one product",
@@ -57,7 +57,7 @@ export default {
         {
           new: true,
         }
-      );
+      ).populate('category');
 
       res.status(200).json({
         data: result,
@@ -75,7 +75,7 @@ export default {
     try {
       const result = await ProductsModel.findOneAndDelete({
         _id: req.params.id,
-      });
+      }).populate('category');
 
       res.status(200).json({
         data: result,
